@@ -8,7 +8,7 @@ if ! command -v fish &> /dev/null; then
     elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
         echo "Installing fish on Lunix"
         sudo apt-get update
-        sudo apt-get install fish
+        sudo apt-get install fish -y
     else
         echo "Stranger OS. Can't install fish!"
     fi

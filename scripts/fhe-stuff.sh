@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # clone repos 
 git clone https://github.com/Janmajayamall/bfv.git
 git clone https://github.com/Janmajayamall/fhe.rs.git

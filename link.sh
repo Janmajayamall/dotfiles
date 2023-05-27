@@ -1,3 +1,5 @@
+#!/bin/bash
+
 RT=$(pwd)
 
 # fish

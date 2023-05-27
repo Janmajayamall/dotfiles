@@ -1,0 +1,6 @@
+[user]
+	name = Janmajaya Mall
+	email = janmajayamall@protonmail.com
+
+[core]
+	excludesfile = ~/.gitignore_global

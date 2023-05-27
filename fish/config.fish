@@ -23,9 +23,11 @@ else
 end
 
 if status is-interactive
-    echo $(which exa)
     # Commands to run in interactive sessions can go here
 end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f "$HOME/.gcloud/path.fish.inc" ]; . "$HOME/.gcloud/path.fish.inc"; end
 
 function rubbish
     openssl rand -base64 20 | pbcopy

@@ -12,3 +12,9 @@ sudo apt-get install -y clang cmake
 # Install additional utilities
 echo "Installing additional utilities..."
 sudo apt-get install -y curl wget unzip git bc
+
+chmod +x ./bootstrap.sh
+chmod +x ./link.sh
+
+./bootstrap.sh
+./link.sh

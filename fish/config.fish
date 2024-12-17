@@ -1,8 +1,8 @@
 # set paths
-set PATH $PATH $HOME/.cargo/bin
+set PATH $PATH $HOME/.cargo/bin 
 switch (uname)
     case Darwin
-        set PATH $PATH /opt/homebrew/bin
+        set PATH $PATH /opt/homebrew/bin /Applications/Julia-1.9.app/Contents/Resources/julia/bin
     case Linux
     case * 
 end
@@ -92,3 +92,13 @@ function aws-ssh
         end
     end
 end
+
+
+#fzf
+set fzf_fd_opts --no-ignore
+
+export PATH="$PATH:/Users/janmajayamall/.foundry/bin"
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

@@ -38,6 +38,8 @@ function gc-ssh
     gcloud compute config-ssh
 end
 
+# OPT key is not mapped to meta key in macos iterm. Map opt to esc+ to use the key bindings.
+# https://stackoverflow.com/questions/196357/making-iterm-to-translate-meta-key-in-the-same-way-as-in-other-oses/197092#197092
 function update_plugins
     fisher install PatrickF1/fzf.fish
 end

@@ -35,10 +35,15 @@ if [[ ! -d $HOME/.rustup ]]; then
 fi
 
 # install imp crates
-for crate in exa bat tealdeer fd-find
+for crate in exa bat tealdeer fd-find ripgrep
 do 
     echo "Installing $crate"
     $HOME/.cargo/bin/cargo install $crate
 done
 
+# Install nvim related things
+sudo apt install build-essential libreadline-dev unzip
+sudo apt install lua5.4 liblua5.4-dev luarocks
+
 # link
+./link.sh

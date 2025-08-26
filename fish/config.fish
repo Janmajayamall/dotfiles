@@ -1,8 +1,8 @@
 # set paths
-set PATH $PATH $HOME/.cargo/bin
+set PATH $PATH $HOME/.cargo/bin 
 switch (uname)
     case Darwin
-        set PATH $PATH /opt/homebrew/bin
+        set PATH $PATH /opt/homebrew/bin /Applications/Julia-1.9.app/Contents/Resources/julia/bin
     case Linux
     case * 
 end
@@ -38,6 +38,8 @@ function gc-ssh
     gcloud compute config-ssh
 end
 
+# OPT key is not mapped to meta key in macos iterm. Map opt to esc+ to use the key bindings.
+# https://stackoverflow.com/questions/196357/making-iterm-to-translate-meta-key-in-the-same-way-as-in-other-oses/197092#197092
 function update_plugins
     fisher install PatrickF1/fzf.fish
 end
@@ -92,3 +94,13 @@ function aws-ssh
         end
     end
 end
+
+
+#fzf
+set fzf_fd_opts --no-ignore
+
+export PATH="$PATH:/Users/janmajayamall/.foundry/bin"
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
